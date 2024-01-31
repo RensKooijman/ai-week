@@ -1,0 +1,66 @@
+body{
+    background-color: #583e85;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.nav{
+    height: 100px;
+    width: 100vw;
+    background-color: rgba(52,53,65,.95);
+}
+#chat{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 100px;
+    overflow: auto;
+    height: 80%;
+}
+.logo{
+    background-image: url("./MicrosoftTeams.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100px;
+}
+#chat>p{
+    font-size: 24px;
+    color: black;
+}
+#chat>label{
+    font-size: 24px;
+    color: black;
+}
+#leven{
+    width: 80vw;
+    height: 3.5vh;
+    background-color: #653eae;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+#button{
+    color: black;
+    width: 150px;
+    height: 40px;
+    background-color: #653eae;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chatter{
+    display: flex;
+    flex-direction: row;
+}
