@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body onload="init()">
-    <div class="nav"><div class="logo"></div></div>
-    <div id="chat"></div>
+
+    <div class="nav">
+        <div class="logo"></div>
+    </div>
+
+    <video id="video" width="640" height="360" controls>
+        <source src="" type="">
+        video not ondersteund.
+    </video>
+
+    <div id="chat"></div> 
+
     <div class="chatter">
         <input type="text" name="stupid" id="leven" placeholder="type with the genie....">
         <button id="button">Stuur verzoek</button>
