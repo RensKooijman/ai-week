@@ -8,14 +8,14 @@
     <link rel="icon" type="image/x-icon" href="./MicrosoftTeams.png">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body onload="init()">
+<body onload="init()" >
 
     <div class="nav">
         <div class="logo"></div>
     </div>
 
     <video id="video" width="640" height="360" controls>
-        <source src="./Video.mp4" type="video/mp4">
+        <source src="./tutorial.mp4" type="video/mp4">
         video not ondersteund.
     </video>
 
