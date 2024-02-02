@@ -15,14 +15,16 @@
     </div>
 
     <video id="video" width="640" height="360" controls>
-        <source src="" type="">
+        <source src="./Video.mp4" type="video/mp4">
         video not ondersteund.
     </video>
+
+    <div class="explain"></div>
 
     <div id="chat"></div> 
 
     <div class="chatter">
-        <input type="text" name="stupid" id="leven" placeholder="type with the genie....">
+        <input type="text" name="stupid" id="leven" placeholder="typ met de genie....">
         <button id="button">Stuur verzoek</button>
     </div>
 </body>

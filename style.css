@@ -1,11 +1,23 @@
 /* Authors: Rens Kooijman, Stefan Versteeg */
 
 :root {
-    --primary: #F9D7FF;
-    --secondary: #653eae;
-    --nav: #B27AB3;
-    --text: black;
+    --primary: #A575FF;
+    --secondary: #7756b4;
+    --test: #e49c9e; 
+    --test2: #c58587;
+    --nav: #A575FF;
+    --text: #000000;
   }
+
+::placeholder {
+  color: black;
+  opacity: 0.7; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: black;
+  opacity: 0.7;
+}
 
 ::-webkit-scrollbar{
     color: var(--secondary);
@@ -65,12 +77,13 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: calc(100vw - 100px); 
-    border: 2px solid black; 
+    border: 4px solid var(--nav); 
     margin-top: 100px;
     border-radius: 30px;
     max-height: 80vh;
     height: 35vh;
     overflow: auto;
+    background-color: rgb(228, 228, 228);
 }
 .chatter {
     display: flex;
@@ -95,6 +108,10 @@ body {
     font-size: 20px;
     padding-left: 20px;
     margin-right: 10px;
+    border: 3px solid #653eae;
+}
+#leven:focus{
+    outline: 1px solid #6b48ac;
 }
 
 #button {
@@ -108,9 +125,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 3px solid #653eae;
 }
 
 #video {
-    margin-left: 1vw;
-    margin-top: 65px;
+
+}
+.explain{
+    background-image: url(./GiftGenie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 1700px;
+    width: 800px;
 }

@@ -2,14 +2,11 @@ function init(){
     const click = document.getElementById('leven');
 
     const outputs = [
-        'wat voor cadeau zou je willen geef me hints zoals: leeftijd, intresses, naam',
-        'zou hij games leuk vinden',
-        'wat denk je van een platform game of misschien iets meer actie een spel met wapens',
-        'zou hij een goed verhaal leuk vinden', 
-        'ik raad je gta V en red dead redemption aan maar heb meerdere keuzes die uw geliefde blij zal maken',
-        'een oude call of duty is een goede keus als de vorige niet goed is'
+        "Geen zorgen! Laten we wat meer te weten komen over je vriendin. Wat zijn haar interesses en hobby's en wat is haar leeftijd?",
+        'Fantastisch! Op basis van haar interesses raad ik een gepersonaliseerd kookboek aan met recepten uit haar favoriete landen. Het zal haar culinaire avontuur zeker verrijken!',
+        'Ik zal je zeker herinneren. En natuurlijk zal ik je helpen het perfecte cadeau te kiezen!'
     ];
-    let body = document.querySelector("html");
+
     const button = document.getElementById('button');
     let chat = document.getElementById('chat');
     let i = 0;
