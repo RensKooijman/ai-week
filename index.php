@@ -14,7 +14,7 @@
         <div class="logo"></div>
     </div>
 
-    <video id="video" width="640" height="360" controls>
+    <video id="video"  controls>
         <source src="./tutorial.mp4" type="video/mp4">
         video not ondersteund.
     </video>
@@ -24,7 +24,7 @@
     <div id="chat"></div> 
 
     <div class="chatter">
-        <input type="text" name="stupid" id="leven" placeholder="typ met de genie....">
+        <input type="text" name="stupid" id="leven" data-disabled="false" placeholder="typ met de genie....">
         <button id="button">Stuur verzoek</button>
     </div>
 </body>

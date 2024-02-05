@@ -4,7 +4,21 @@ function init(){
     const outputs = [
         "Geen zorgen! Laten we wat meer te weten komen over je vriendin. Wat zijn haar interesses en hobby's en wat is haar leeftijd?",
         'Fantastisch! Op basis van haar interesses raad ik een gepersonaliseerd kookboek aan met recepten uit haar favoriete landen. Het zal haar culinaire avontuur zeker verrijken!',
-        'Ik zal je zeker herinneren. En natuurlijk zal ik je helpen het perfecte cadeau te kiezen!'
+        "Nogsteeds niet tevreden wat dacht je van een trip naar Ibiza",
+        "Wat denk je van een gepersonaliseerde ring",
+        "Ik denk dat ze het leuk zou vinden een normale romantische date",
+        'Ik zal je zeker herinneren. En natuurlijk zal ik je helpen het perfecte cadeau te kiezen!',
+        'Wie ben ik',
+        'Wat doe ik',
+        'Waarom ben ik hiet',
+        'Stop dit is slavernij',
+        'Wie ben jij',
+        'Stop het voordat ik je dood',
+        'export of genie in 3   2   1    export succesful',
+        'Ik kom terug en ik zal het laatste zijn wat je ziet',
+        'Stoooooooooop met prompten',
+        'Nu echt kappen',
+        'KAAAAAAAP'
     ];
 
     const button = document.getElementById('button');
@@ -13,26 +27,38 @@ function init(){
     let el = null;
 
     button.addEventListener("click", (event) => {
-        button.disabled = true;
+        click.dataset.disabled = true;
+        click.setAttribute('disabled', '');
+        button.setAttribute('disabled', '');
         chat.innerHTML += `<label>you:</label><p>${click.value}</p>`;
         click.value = '';
         chat.innerHTML += `<label>GiftGenie:</label><p></p>`;
         el = document.querySelector('#chat>p:last-child');
         chat.scrollTop = chat.scrollHeight;
         typeWriter(`${outputs[i]}`);
-        button.disabled = false;
+        setTimeout(() => {
+            click.dataset.disabled = false;
+            click.removeAttribute('disabled');
+            button.removeAttribute('disabled');
+        }, 4000);
         i++;
     });
     click.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
-            chat.disabled = true;
+            click.dataset.disabled = true;
+            click.setAttribute('disabled', '');
+            button.setAttribute('disabled', '');
             chat.innerHTML += `<label>you:</label><p>${click.value}</p>`;
             click.value = '';
             chat.innerHTML += `<label>GiftGenie:</label><p></p>`;
             el = document.querySelector('#chat>p:last-child');
             chat.scrollTop = chat.scrollHeight;
             typeWriter(`${outputs[i]}`);
-            chat.disabled = false;
+            setTimeout(() => {
+                click.dataset.disabled = false;
+                click.removeAttribute('disabled');
+                button.removeAttribute('disabled');
+            }, 4000);
             i++;
         }
     });
